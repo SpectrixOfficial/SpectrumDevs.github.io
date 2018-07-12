@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Below is my own random garbage thing for the main syle of text */
+webtext {
+    color: white;
+    font-size: 24px;
+    font-family: 'Anonymous Pro', monospace;
+} 
+
+html {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+}
+        
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 22px;}
+ }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar. h o t  */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+        }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link or something idk */
+.topnav a.active {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+/* Here's part of the cool kids paralex effect */
+html{
+    min-height: 100%;
+        overflow: visible;
+    }
+    
+body{
+    height: calc(100vh - 8em);
+    color: rgba(255,255,255,.75);
+    font-family: 'Anonymous Pro', monospace;
+    background-color: rgb(25,25,25);
+    }
+
+ .line-1{
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* This is the smexy typewriter animation, suprisingly no js. Pretty neat */
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+}
+ 
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+}
+
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
+
+/* idk why it's called SPB but Xeno wanted it like this ;) */
+.SPB{
+    color:white;
+    opacity:1;
+    transition:1s;
+    text-decoration-line:none;
+    text-decoration-color:white;
+    border:none;
+}
+
+.SPB:hover {
+    background-color: #404040;
+    border-radius:100px;
+    text-decoration-line:none;
+    text-decoration-color:white;
+    color:white;
+    transition:1s;
+}
+
+.SPB:active {
+    background-color: #999999;
+    border-radius:100px;
+    color:white;
+    text-decoration-color:white;
+    text-decoration-line:none;
+    transition:1s;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* More cool kids paralex things idk anymore tho */
+.parallax {
+    background-image: url("https://cdn.discordapp.com/attachments/394899083640438794/456884682424844298/Spectrum_Spectrix_Thing_Background_new_copy.jpg");
+    height: 5000px;
+
+    /* Create the cool kids parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+            background-size: cover;
+    }
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed. Yes I copy pasted this part do you have a problem with that? */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+}
