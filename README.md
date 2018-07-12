@@ -1,2 +1,2 @@
 # SpectrumDevs.github.io
-Website for Spectrum, the discord bot.
+Website for Spectrum, the discord bot. You're welcome to have a look, however it is uncomplete and very messy
