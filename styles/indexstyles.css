@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-/* Below is my own random garbage thing for the main syle of text */
+/* Below is my own random garbage thing for the main style of text */
 webtext {
     color: white;
     font-size: 24px;
@@ -44,13 +44,13 @@ html {
     color: black;
 }
 
-/* Add a color to the active/current link or something idk */
+/* Add a color to the active/current link */
 .topnav a.active {
     background-color: #0f0f0f;
     color: white;
 }
 
-/* Here's part of the cool kids paralex effect */
+/* Here's part of the cool kids parallax effect */
 html{
     min-height: 100%;
         overflow: visible;
